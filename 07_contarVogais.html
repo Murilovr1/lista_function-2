@@ -6,10 +6,23 @@
     *Para simplificar, não considere vogais acentuadas.
     */
 
+    const textoUser = prompt("Insira uma palavra").trim().toUpperCase().replace("Á, A").replace("É, E").replace("Í, I").replace("Ó, O").replace("Ú, U");
     //Entrada
+    function contagem(texto) {
+        let vogais = 0;
+        for (const letras of texto) {
+            if (letras == "A" || letras == "E" || letras == "I" || letras == "O" || letras == "U") {
+                vogais++
+
+            }
+        }
+        alert(`O total de vogais nesta palavra é ${vogais} vogais.`);
+
+    };
 
 
     //Processamento
+    contagem(textoUser);
 
 
     //Saída

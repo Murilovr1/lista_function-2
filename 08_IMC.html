@@ -6,9 +6,18 @@
     */
 
     //Entrada
-
-
+    const peso = Number(prompt(`quanto voce pesa em KG`).trim());
+    const altura = Number(prompt(`qual sua altura em Metros`).trim());
     //Processamento
+
+    function IMC(p, a) {
+        return p / (a * a);
+    }
+
+    const resultado = IMC(peso, altura);
+    //Saída
+
+    alert(`o seu imc é ${resultado}`);
 
 
     //Saída
